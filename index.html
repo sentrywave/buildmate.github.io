@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildMate - Coming Soon</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+      color: #7f8c8d;
+    }
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .countdown div {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      min-width: 100px;
+    }
+    .countdown span {
+      display: block;
+      font-size: 0.8rem;
+      color: #ecf0f1;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Placeholder Logo -->
+  <img src="https://via.placeholder.com/150" alt="BuildMate Logo" class="logo">
+
+  <!-- Heading -->
+  <h1>BuildMate</h1>
+  <p>Connecting Construction, Building Futures</p>
+
+  <!-- Countdown Timer -->
+  <div class="countdown">
+    <div>
+      <span id="days">00</span>
+      <span>Days</span>
+    </div>
+    <div>
+      <span id="hours">00</span>
+      <span>Hours</span>
+    </div>
+    <div>
+      <span id="minutes">00</span>
+      <span>Minutes</span>
+    </div>
+    <div>
+      <span id="seconds">00</span>
+      <span>Seconds</span>
+    </div>
+  </div>
+
+  <!-- Countdown Script -->
+  <script>
+    // Set the target date (18 April 2025)
+    const targetDate = new Date("April 18, 2025 00:00:00").getTime();
+
+    // Update the countdown every second
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
+
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      // Display the result
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+      document.getElementById("seconds").innerText = seconds;
+
+      // If the countdown is over, display a message
+      if (timeLeft < 0) {
+        clearInterval(timer);
+        document.querySelector(".countdown").innerHTML = "<h2>We're Live!</h2>";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
