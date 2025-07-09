@@ -1,84 +1,348 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <!-- Previous meta tags remain unchanged -->
-    <title>BuildMate Zimbabwe | Construction Materials Supplier in Sunway City, Harare | +263 78 213 5087</title>
-    
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="BuildMate Zimbabwe - Coming August 2025! Nationwide supplier of bricks, cement, sand & stones. Transport services across Zimbabwe. Launching in 2025.">
+    <meta name="keywords"
+          content="construction materials Zimbabwe, bricks Harare, PPC cement, khaya cement, pitsand, riversand, 3/4 stones, transport services Zimbabwe">
+    <meta name="author" content="BuildMate Zimbabwe">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="BuildMate Zimbabwe | Construction Materials Nationwide (Coming 2025)">
+    <meta property="og:description"
+          content="Premier supplier of bricks, cement, sand & stones with nationwide transport services. Launching soon across Zimbabwe.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.buildmate.co.zw/">
+    <meta property="og:image" content="https://www.buildmate.co.zw/images/buildmate-social-preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BuildMate Zimbabwe | Construction Materials (Coming 2025)">
+    <meta name="twitter:description"
+          content="Nationwide supplier of quality bricks, cement, sand & stones with reliable transport. Launching soon!">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.buildmate.co.zw/">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ConstructionBusiness",
+            "name": "BuildMate Zimbabwe",
+            "image": "https://www.buildmate.co.zw/logo-horizontal.jpg",
+            "@id": "https://www.buildmate.co.zw",
+            "url": "https://www.buildmate.co.zw",
+            "telephone": "+263782135087",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4578 Rockview 1D",
+                "addressLocality": "Sunway City",
+                "addressRegion": "Harare",
+                "postalCode": "00263",
+                "addressCountry": "Zimbabwe"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ],
+                "opens": "07:30",
+                "closes": "17:00"
+            },
+            "description": "Coming  August 2025 - Nationwide supplier of construction materials and transport services across Zimbabwe."
+        }
+    </script>
+
+    <title>BuildMate Zimbabwe | Quality Construction Materials & Transport (Coming August 2025)</title>
+
     <style>
-        /* Updated Brand Colors from Logo */
         :root {
-            --primary: #2A5C82;    /* Dark blue from BUILDMATE text */
-            --accent: #E67E22;     /* Orange from BUILD SMART highlight */
-            --dark: #222222;        /* Dark gray for contrast */
-            --light: #f8f9fa;       /* Light background */
+            --primary: #1A237E; /* Deep Blue from logo */
+            --accent: #FF9800; /* Orange from logo */
+            --dark: #1a1a1a;
+            --light: #f8f9fa;
         }
-        
-        /* New Logo Styling */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 1rem;
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            margin: 0;
+            padding: 0;
+            background: var(--light);
         }
-        .logo-img {
-            height: 80px;
-            width: auto;
-        }
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-        .logo-main {
-            font-size: 2.5rem;
-            font-weight: 700;
+
+        .contact-bar {
+            background: var(--dark);
             color: white;
-            line-height: 1;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1rem;
         }
-        .logo-tagline {
+
+        .contact-bar a {
             color: var(--accent);
-            font-size: 0.9rem;
-            letter-spacing: 0.5px;
-            margin-top: 5px;
+            text-decoration: none;
+            font-weight: bold;
         }
-        
-        /* Rest of previous CSS remains unchanged */
+
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 0.2rem;
+        }
+
+        .logo-img {
+            height: 250px;
+        }
+
+        .company-name {
+            font-size: 2.8rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .coming-soon-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .launch-message {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .materials-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 3rem 0;
+            text-align: left;
+        }
+
+        .material-category {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .material-category h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .cta-box {
+            background: var(--primary);
+            color: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            margin: 3rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            transition: all 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 80px;
+            }
+
+            .company-name {
+                font-size: 2.2rem;
+            }
+
+            .launch-message {
+                font-size: 1.4rem;
+            }
+
+            .contact-bar {
+                font-size: 0.9rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <!-- Contact Bar - Updated Email -->
-    <div class="contact-bar">
-        Call us now: <a href="tel:+263782135087" style="color: var(--accent); text-decoration: none; font-weight: bold;">+263 78 213 5087</a> | Email: <a href="mailto:sales@buildmate.co.zw" style="color: var(--accent); text-decoration: none; font-weight: bold;">sales@buildmate.co.zw</a>
-    </div>
-    
-    <!-- Header with Logo Placeholder -->
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <!-- Logo Placeholder - Replace with actual logo-vertical.jpg -->
-                <img src="images/logo-vertical.jpg" alt="BuildMate Zimbabwe Logo" class="logo-img">
-                <div class="logo-text">
-                    <div class="logo-main">BUILDMATE</div>
-                    <div class="logo-tagline">BUILD SMART • CONTRACT EASY • SUPPLY FAST</div>
-                </div>
-            </div>
-            <p>Your Trusted Construction Partner in Zimbabwe</p>
-        </div>
-    </header>
+<!-- Contact Bar -->
+<div class="contact-bar">
+    Coming August 2025! For inquiries: <a href="tel:+263782135087">+263 78 213 5087</a> | Sunway City, Harare
+</div>
 
-    <!-- Rest of the content remains exactly the same -->
-    
-    <!-- Updated Footer with Email -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 BuildMate Zimbabwe. All rights reserved.</p>
-            <p>Construction Materials Supplier in Sunway City, Harare</p>
-            <p>Email: <a href="mailto:sales@buildmate.co.zw" style="color: var(--accent);">sales@buildmate.co.zw</a></p>
-            <p style="margin-top: 1rem;">
-                <a href="/privacy" style="color: white; margin: 0 10px;">Privacy Policy</a> | 
-                <a href="/terms" style="color: white; margin: 0 10px;">Terms of Service</a>
-            </p>
+<!-- Header -->
+<header>
+    <div class="coming-soon-container">
+        <div class="logo">
+            <img src="logo-horizontal.jpg" alt="BuildMate Zimbabwe Logo" class="logo-img" >
         </div>
-    </footer>
+<!--        <div class="company-name">BuildMate Zimbabwe</div>-->
+<!--        <div class="tagline">Your Nationwide Construction Solutions Partner</div>-->
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="coming-soon-container">
+    <div class="launch-message">
+        Zimbabwe's Premier Construction Materials and Transport Service!
+    </div>
+    <p>BuildMate Zimbabwe will launch in early 2025 as your trusted source for quality construction materials and
+        reliable transport services across all provinces.</p>
+
+    <!-- Countdown Section -->
+    <div id="countdown-section" style="margin: 2rem 0;">
+        <h2>Countdown to Launch</h2>
+        <div id="countdown" style="font-size: 2rem; color: var(--accent); font-weight: bold;"></div>
+    </div>
+
+    <h2>Building Materials</h2>
+    <div class="materials-list">
+        <div class="material-category">
+            <h3>Bricks</h3>
+            <ul>
+                <li>Face Bricks</li>
+                <li>Common Bricks</li>
+                <li>Compressed Bricks</li>
+            </ul>
+        </div>
+        <div class="material-category">
+            <h3>Cement</h3>
+            <ul>
+                <li>PPC Cement</li>
+                <li>Khaya Cement</li>
+            </ul>
+        </div>
+        <div class="material-category">
+            <h3>Sand & Stones</h3>
+            <ul>
+                <li>Pitsand</li>
+                <li>Washed Riversand</li>
+                <li>3/4 Stones</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Our Services</h2>
+    <div class="materials-list">
+        <div class="material-category">
+            <h3>Material Supply</h3>
+            <p>Quality construction materials sourced from trusted manufacturers</p>
+        </div>
+        <div class="material-category">
+            <h3>Nationwide Transport</h3>
+            <p>Reliable delivery to all provinces including:</p>
+            <ul>
+                <li>Harare & Bulawayo</li>
+                <li>Mutare & Masvingo</li>
+                <li>Gweru & Kwekwe</li>
+                <li>All other regions</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cta-box">
+        <h2 style="color: white; margin-top: 0;">Get Early Access!</h2>
+        <p>Be the first to know when we launch and receive exclusive offers.</p>
+        <form action="https://your-email-service.com/subscribe" method="POST" style="margin-top: 20px;">
+            <input type="text" name="name" placeholder="Your Name" required
+                   style="padding: 12px; width: 100%; max-width: 400px; border: none; border-radius: 5px; margin-bottom: 10px;">
+            <input type="email" name="email" placeholder="Email Address" required
+                   style="padding: 12px; width: 100%; max-width: 400px; border: none; border-radius: 5px; margin-bottom: 10px;">
+            <input type="tel" name="phone" placeholder="Phone (Optional)"
+                   style="padding: 12px; width: 100%; max-width: 400px; border: none; border-radius: 5px; margin-bottom: 10px;">
+            <button type="submit" class="cta-button">Notify Me</button>
+        </form>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="coming-soon-container">
+        <p>&copy; 2025 BuildMate Zimbabwe. All rights reserved.</p>
+        <p>4578 Rockview 1D, Sunway City, Harare</p>
+        <p>Email: <a href="mailto:sales@buildmate.co.zw" style="color: var(--accent);">sales@buildmate.co.zw</a> |
+            Phone: <a href="tel:+263782135087" style="color: var(--accent);">+263 78 213 5087</a></p>
+        <p style="margin-top: 1rem;">
+            <a href="/privacy" style="color: white; margin: 0 10px;">Privacy Policy</a> |
+            <a href="/terms" style="color: white; margin: 0 10px;">Terms of Service</a>
+        </p>
+    </div>
+</footer>
+
+<script>
+    // Countdown to 1 August 2025
+    const countdownElement = document.getElementById('countdown');
+    const launchDate = new Date('2025-08-01T00:00:00Z').getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        if (distance < 0) {
+            countdownElement.innerHTML = "We're live!";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        countdownElement.innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+</script>
 </body>
 </html>
