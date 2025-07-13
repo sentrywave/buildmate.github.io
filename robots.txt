@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /index.html
+Allow: /pitsand.html
+Allow: /riversand.html
+Allow: /stone.html
+Allow: /bricks.html
 Allow: /
 Disallow:

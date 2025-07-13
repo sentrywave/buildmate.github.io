@@ -6,4 +6,28 @@
         <changefreq>daily</changefreq>
         <lastmod>2025-08-13</lastmod>
     </url>
+    <url>
+        <loc>https://www.buildmate.co.zw/bricks.html</loc>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.buildmate.co.zw/stone.html</loc>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.buildmate.co.zw/riversand.html</loc>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-13</lastmod>
+    </url>
+    <url>
+        <loc>https://www.buildmate.co.zw/pitsand.html</loc>
+        <priority>0.9</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2025-08-13</lastmod>
+    </url>
 </urlset>

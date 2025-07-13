@@ -133,10 +133,36 @@
             font-weight: bold;
         }
 
+        .main-nav {
+            background: var(--primary);
+            padding: 15px 0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            margin: 0 5px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .nav-link:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
         header {
             background: var(--primary);
             color: white;
-            padding: 3rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
 
@@ -246,6 +272,12 @@
             .contact-bar {
                 font-size: 0.9rem;
             }
+
+            .nav-link {
+                padding: 8px 12px;
+                margin: 0 3px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -260,6 +292,16 @@
 <div class="contact-bar">
     Coming August 2025! For inquiries: <a href="tel:+263782135087">+263 78 213 5087</a> | Sunway City, Harare
 </div>
+
+<!-- Navigation -->
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="bricks.html" class="nav-link">Bricks</a>
+        <a href="stones.html" class="nav-link">3/4 Stones</a>
+        <a href="riversand.html" class="nav-link">Riversand</a>
+        <a href="pitsand.html" class="nav-link">Pitsand</a>
+    </div>
+</nav>
 
 <!-- Header -->
 <header>
@@ -294,7 +336,10 @@
                 <li>Face Bricks</li>
                 <li>Common Bricks</li>
                 <li>Compressed Bricks</li>
+                <li>Load Bearing Bricks</li>
+                <li>Botswana Bricks</li>
             </ul>
+            <a href="bricks.html" class="cta-button" style="display: inline-block; margin-top: 15px; padding: 8px 15px; font-size: 0.9rem;">View All Bricks</a>
         </div>
         <div class="material-category">
             <h3>Cement</h3>
@@ -310,6 +355,11 @@
                 <li>Washed Riversand</li>
                 <li>3/4 Stones</li>
             </ul>
+            <div style="margin-top: 15px;">
+                <a href="pitsand.html" class="cta-button" style="display: inline-block; padding: 8px 15px; font-size: 0.9rem; margin-right: 10px;">Pitsand</a>
+                <a href="riversand.html" class="cta-button" style="display: inline-block; padding: 8px 15px; font-size: 0.9rem; margin-right: 10px;">Riversand</a>
+                <a href="stones.html" class="cta-button" style="display: inline-block; padding: 8px 15px; font-size: 0.9rem;">3/4 Stones</a>
+            </div>
         </div>
     </div>
 
