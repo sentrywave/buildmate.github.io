@@ -3,5 +3,7 @@
     <url>
         <loc>https://www.buildmate.co.zw/index.html</loc>
         <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+        <lastmod>2025-08-13</lastmod>
     </url>
 </urlset>
