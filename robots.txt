@@ -2,7 +2,7 @@ User-agent: *
 Allow: /index.html
 Allow: /pitsand.html
 Allow: /riversand.html
-Allow: /stone.html
+Allow: /3-4-stones.html
 Allow: /bricks.html
 Allow: /images/
 Allow: /
